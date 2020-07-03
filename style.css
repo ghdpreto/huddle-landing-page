@@ -56,7 +56,6 @@ font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
 }
 
 .l-main__content__title {
@@ -73,7 +72,7 @@ font-family: 'Open Sans', sans-serif;
 
 .l-main__content__button {
     width: 250px;
-    padding: 20px;
+    padding: 18px;
     font-size: 1.8rem;
     color: var(--color-violet);
     background-color: #fff;
@@ -110,10 +109,57 @@ font-family: 'Open Sans', sans-serif;
 
 
 .l-footer__attribution {
+    margin-top: 20px;
     font-size: 1.4rem;
 }
 
 .l-footer__attribution__link {
     color: white;
     font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 48%;
+    }
+
+    body {
+        background-image: url('./images/bg-mobile.svg');
+        background-size: contain;
+        background-attachment: initial;
+        background-position: 0 0 ;
+    }
+
+    .l-header {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .l-header__logo {
+        width: 150px;
+    }
+
+    .l-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .l-main__illustration {
+        min-width: 250px;
+        max-width: 400px;
+    }
+
+    .l-main__content__button {
+        margin: 20px 0;
+        align-self: center;
+    }
+
+    .l-footer__social {
+        align-self: center;
+    }
 }
