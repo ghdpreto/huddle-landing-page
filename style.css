@@ -118,6 +118,10 @@ font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
 
+.l-footer__attribution__link__logo {
+    width: 22px;
+}
+
 
 @media (max-width: 768px) {
     html {
