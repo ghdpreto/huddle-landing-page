@@ -1,7 +1,116 @@
-  .l-footer__attribution {
-    font-size: 11px;
+:root {
+    --color-violet: hsl(257, 40%, 49%);
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    height: 100vh;
+    font-size: 62.5%; /* 1rem 10px */
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(375px, 1440px);
+    grid-template-rows: 150px auto 150px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 20px;
+
+    background-image: url('./images/bg-desktop.svg');
+    background-color: var(--color-violet);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 bottom;
+
+    color: white;
+}
+
+
+.l-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.l-main__illustration {
+    width: 100%;
+    min-width: 300px;
+    margin: auto;
+}
+
+.l-main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.l-main__content__title {
+    font-size: 3.6rem;
+    line-height: 6rem;
+}
+
+.l-main__content__text {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    margin: 30px 0;
+}
+
+.l-main__content__button {
+    width: 250px;
+    padding: 20px;
+    font-size: 1.8rem;
+    color: var(--color-violet);
+    background-color: #fff;
+    text-decoration: none;
     text-align: center;
-  }
-  .l-footer__attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+
+
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+}
+
+.l-footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-footer__social {
+    display: flex;
+    align-self: flex-end;
+}
+
+.l-footer__icon {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.l-footer__icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.l-footer__attribution {
+    font-size: 1.4rem;
+}
+
+.l-footer__attribution__link {
+    color: white;
+    font-weight: 700;
+}
