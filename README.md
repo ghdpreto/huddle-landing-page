@@ -4,13 +4,13 @@
 
 ## Welcome! 👋
 
+[See it working](https://huddle-landing-page-ej45p3x9i.vercel.app/)
+
 Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
-
-[See it working](https://huddle-landing-page-ej45p3x9i.vercel.app/)
 
 ## Where to find everything
 
